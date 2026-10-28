@@ -1,0 +1,4 @@
+id,date_utc,hypothesis,configuration,commit,metric,decision
+F1,2026-10-28,Smaller tiles improve sigmoid broadcast latency,tile512 warps4 job56a155bfb0184f10,executed_job_snapshot,mean_speedup1.004397913952944,retain measured positive shapes; keep general baseline
+F2,2026-10-28,Intermediate tiles improve sigmoid broadcast latency,tile1024 warps4 job56a155bfb0184f10,executed_job_snapshot,mean_speedup0.9997988449003283,retain all results; keep baseline
+F3,2026-10-28,Larger tiles improve sigmoid broadcast latency,tile2048 warps8 job56a155bfb0184f10,executed_job_snapshot,mean_speedup1.0011154877654636,retain all results; keep baseline
