@@ -38,15 +38,26 @@ These code changes implement distinct hypotheses against the included SGLang ref
 
 | Candidate | Change | Validation status |
 |---|---|---|
-| `softcap_row_argmax` | Split a vocabulary row across programs and merge with first-index tie handling | Full GPU tests/benchmark queued |
-| `rmsnorm_fp32` | Pack narrow rows and select warps from tile size | Full GPU tests/benchmark queued |
-| `gemma_fused_add_rmsnorm` | Pack narrow residual-add/norm rows; retain the wide-row plan | Full GPU tests/benchmark queued |
+| `softcap_row_argmax` | Split a vocabulary row across programs and merge with first-index tie handling | Measured: 2.3577× geometric mean; wins every run on 12/15 cases |
+| `rmsnorm_fp32` | Pack narrow rows and select warps from tile size | Measured: 1.0393× geometric mean; wins every run on 3/16 cases |
+| `gemma_fused_add_rmsnorm` | Pack narrow residual-add/norm rows; retain the wide-row plan | Measured: 1.0548× geometric mean; wins every run on 3/8 cases |
 
-The candidate files, reference implementations, tie/stride/dtype tests and interleaved benchmark are included. GPU job `d1006ec4412e4f09` is queued under the canonical server project `flagos-track1-s2`; no pending result is presented as measured. The acceptance rule written before execution requires correctness and a win on **every tested case in every run**. All regressions will be retained.
+GPU job `d1006ec4412e4f09` completed successfully on an RTX 3090. All 39 cases
+passed correctness in each of three fresh-input runs. The raw file contains
+585 paired timing rounds. The strongest measured per-case ratios are **9.9333×**
+for softcap, **1.3929×** for RMSNorm and **1.5745×** for fused add/RMSNorm.
+
+The preregistered gate requires a speed win on **every tested case in every run**.
+None meets that unconditional gate: worst-case ratios are respectively 0.9674×,
+0.8889× and 0.9091×. The gains remain measured positive results; these regressions
+prevent unconditional promotion. [All cases and run ranges](results/operators-20261028/SUMMARY.md)
+are retained alongside raw timings. This is one CUDA GPU, not the official
+multi-chip score. Microsecond timings and this fixed shape grid limit generalisation.
 
 ```bash
 python -m pytest -q tests/test_kernels.py
 python bench/bench.py --runs 3 --rounds 5 --out results
+python scripts/summarize_operators.py  # reconstruct all 39 cases on CPU
 ```
 
 ## Official entry status and dates

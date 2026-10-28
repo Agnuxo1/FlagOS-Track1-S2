@@ -8,4 +8,6 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: python scripts/summarize_gate.py
+      - run: python scripts/summarize_operators.py
+      - run: git diff --exit-code -- results/operators-20261028/SUMMARY.md
       - run: git diff --exit-code -- results/gate-20261028/SUMMARY.md
