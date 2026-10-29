@@ -14,6 +14,9 @@ class PortalInterfaceRegression(unittest.TestCase):
     def test_corrected_archive_matches_current_source(self):
         check(ROOT / 'submissions/task177-z1-interfacefix.zip')
 
+    def test_ascend_specific_archive_matches_current_sources(self):
+        check(ROOT / 'submissions/task177-z1-ascendfix.zip')
+
 
 if __name__ == '__main__':
     unittest.main()

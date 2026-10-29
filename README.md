@@ -119,13 +119,22 @@ one. The first entry remains recorded as an interface failure, not a measured
 numerical or performance regression.
 
 **Corrected official entry, 29 October 00:30 UTC:** the portal confirms
-`task177-z1-interfacefix.zip` submitted and queued. Its partial results show
-**5/7 chips passing correctness**, with measured speedups **MetaX 2.17×,
-Hygon 8.60×, General A 7.19× and General B 6.42×**. Kunlunxin passes correctness
-but reports **<0.01×**; Iluvatar and Ascend are still pending. All results are
-retained in the [partial official receipt](evidence/task177-official-interfacefix-20261029.json).
-The entry remains Evaluating: no final average, leaderboard qualification or
-prize is claimed from these partial results.
+`task177-z1-interfacefix.zip` submitted. Its **Completed** evaluation shows
+**6/7 chips passing correctness**, with five positive official speedups:
+**Iluvatar 12.17×, MetaX 2.17×, Hygon 8.60×, General A 7.19× and General B
+6.42×**. Kunlunxin passes correctness but reports **<0.01×**. Ascend fails at
+launch: its driver rejects grid dimension131072 because the maximum is65535.
+All results remain in the [official receipt](evidence/task177-official-interfacefix-20261029.json).
+No final average, leaderboard qualification or prize is claimed.
+
+**Ascend-specific launch repair:** a bounded4096-program grid with a grid-stride
+loop covers every row instead of dropping work. The generic file remains
+byte-identical, preserving the five successful chip implementations. All
+**36 new CUDA proxy checks** pass, including524288rows, the old grid boundary,
+two layouts and three seeds. [Complete coverage results](results/task177-20261029/ascend-launch-coverage.json).
+These checks establish numerical coverage on RTX3090; actual Ascend validation
+and performance still require a fresh official evaluation. Kunlunxin's low
+throughput is a separate, retained issue.
 The other ZIPs under `submissions/` remain prepared candidates.
 
 The current submission selector exposes **Batch 11, tasks161–177**. Our older

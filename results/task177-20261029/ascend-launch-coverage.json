@@ -1,0 +1,547 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "checks": [
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        1,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 1,
+      "generic_grid": 1,
+      "bounded_grid": 1,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        1,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 1,
+      "generic_grid": 1,
+      "bounded_grid": 1,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 0,
+      "shape": [
+        2,
+        31,
+        8,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 496,
+      "generic_grid": 124,
+      "bounded_grid": 124,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 0,
+      "shape": [
+        2,
+        31,
+        8,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 496,
+      "generic_grid": 124,
+      "bounded_grid": 124,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        262139,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262139,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.015625
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        262139,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262139,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        262140,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262140,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.015625
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        262140,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262140,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.00390625
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        262141,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262141,
+      "generic_grid": 65536,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0078125
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        262141,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262141,
+      "generic_grid": 65536,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.015625
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        4096,
+        128,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 524288,
+      "generic_grid": 131072,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.001953125
+    },
+    {
+      "seed": 0,
+      "shape": [
+        1,
+        4096,
+        128,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 524288,
+      "generic_grid": 131072,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.015625
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        1,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 1,
+      "generic_grid": 1,
+      "bounded_grid": 1,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        1,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 1,
+      "generic_grid": 1,
+      "bounded_grid": 1,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        2,
+        31,
+        8,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 496,
+      "generic_grid": 124,
+      "bounded_grid": 124,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        2,
+        31,
+        8,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 496,
+      "generic_grid": 124,
+      "bounded_grid": 124,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        262139,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262139,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        262139,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262139,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        262140,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262140,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        262140,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262140,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        262141,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262141,
+      "generic_grid": 65536,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        262141,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262141,
+      "generic_grid": 65536,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        4096,
+        128,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 524288,
+      "generic_grid": 131072,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0078125
+    },
+    {
+      "seed": 1,
+      "shape": [
+        1,
+        4096,
+        128,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 524288,
+      "generic_grid": 131072,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.001953125
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        1,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 1,
+      "generic_grid": 1,
+      "bounded_grid": 1,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        1,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 1,
+      "generic_grid": 1,
+      "bounded_grid": 1,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2,
+      "shape": [
+        2,
+        31,
+        8,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 496,
+      "generic_grid": 124,
+      "bounded_grid": 124,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2,
+      "shape": [
+        2,
+        31,
+        8,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 496,
+      "generic_grid": 124,
+      "bounded_grid": 124,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        262139,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262139,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        262139,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262139,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.001953125
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        262140,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262140,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.015625
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        262140,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262140,
+      "generic_grid": 65535,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        262141,
+        1,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 262141,
+      "generic_grid": 65536,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.015625
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        262141,
+        1,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 262141,
+      "generic_grid": 65536,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.00390625
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        4096,
+        128,
+        128
+      ],
+      "layout": "contiguous",
+      "rows": 524288,
+      "generic_grid": 131072,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.00390625
+    },
+    {
+      "seed": 2,
+      "shape": [
+        1,
+        4096,
+        128,
+        128
+      ],
+      "layout": "fused_qkv_slice",
+      "rows": 524288,
+      "generic_grid": 131072,
+      "bounded_grid": 4096,
+      "passed": true,
+      "max_abs": 0.0
+    }
+  ],
+  "all_passed": true,
+  "scope": "Generated input numerical/coverage checks on RTX3090; no Ascend performance claim"
+}
