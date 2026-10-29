@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-10-29T00:37:12.459001+00:00",
+  "portal": "https://flagos.io/race-detail-season2?id=782kzq4m",
+  "team": "Agnuxo1Lab",
+  "task": 177,
+  "file": "task177-z1-interfacefix.zip",
+  "submitted_receipt_display": "10-29 01:30:40, browser Europe/Madrid",
+  "submitted_history_display_beijing": "10-29 08:30",
+  "state": "Evaluating",
+  "correctness_passed_chips_at_check": "5/7",
+  "per_chip_speedup": {
+    "Iluvatar": null,
+    "MetaX": 2.17,
+    "Hygon": 8.6,
+    "Kunlunxin": "<0.01",
+    "Ascend": null,
+    "General-Purpose Chip A": 7.19,
+    "General-Purpose Chip B": 6.42
+  },
+  "official_average_speedup": null,
+  "local_sha256": "c3ffd14c7113b5ed49f6f17a3006464ad2fabb1192f14cee523458c5cb98c210",
+  "scope": "Partial official measurements, no final eligibility/rank/prize claim. Kunlunxin passes correctness but has very low speed; pending chips are not failures."
+}

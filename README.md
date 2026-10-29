@@ -116,7 +116,16 @@ The corrected archive exports the required function. Arithmetic and launch
 helpers are AST-identical to those used in the288 successful local checks.
 A regression test rejects the actual first archive and accepts the corrected
 one. The first entry remains recorded as an interface failure, not a measured
-numerical or performance regression. No official speedup is claimed yet.
+numerical or performance regression.
+
+**Corrected official entry,29October00:30UTC:** the portal confirms
+`task177-z1-interfacefix.zip` submitted and queued. Its partial results show
+**5/7 chips passing correctness**, with measured speedups **MetaX2.17×,
+Hygon8.60×, GeneralA7.19× and GeneralB6.42×**. Kunlunxin passes correctness
+but reports **<0.01×**; Iluvatar and Ascend are still pending. All results are
+retained in the [partial official receipt](evidence/task177-official-interfacefix-20261029.json).
+The entry remains Evaluating: no final average, leaderboard qualification or
+prize is claimed from these partial results.
 The other ZIPs under `submissions/` remain prepared candidates.
 
 The current submission selector exposes **Batch 11, tasks161–177**. Our older
