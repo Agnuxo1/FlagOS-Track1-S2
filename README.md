@@ -135,6 +135,11 @@ two layouts and three seeds. [Complete coverage results](results/task177-2026102
 These checks establish numerical coverage on RTX3090; actual Ascend validation
 and performance still require a fresh official evaluation. Kunlunxin's low
 throughput is a separate, retained issue.
+
+The Ascend-only repair, `task177-z1-ascendfix.zip`, was officially submitted
+on **29 October, 00:54 UTC**. The portal confirms **Submitted. Queued for
+evaluation.** [Third-entry receipt](evidence/task177-official-ascendfix-20261029.json).
+Its result remains pending; the earlier five measured speedups are preserved.
 The other ZIPs under `submissions/` remain prepared candidates.
 
 The current submission selector exposes **Batch 11, tasks161–177**. Our older
