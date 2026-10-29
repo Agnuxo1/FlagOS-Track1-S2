@@ -4,12 +4,12 @@ Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, 
 
 ## Live Batch 11 candidate: strided ZImage QK RMSNorm
 
-The newly registered team now targets **task177 `zimage_qk_rmsnorm`**. This
+The newly registered team now targets **task 177, `zimage_qk_rmsnorm`**. This
 adapts our packed-row RMSNorm to the official bf16/128-column interface,
 reads fused-QKV slices without a contiguous input copy, and preserves the
 required bf16 rounding before weight multiplication. Output is fresh and
 contiguous. All core arithmetic runs in Triton, with no Torch math fallback.
-RMSNorm's mathematical background is [Zhang & Sennrich, NeurIPS2019](https://arxiv.org/abs/1910.07467);
+RMSNorm's mathematical background is [Zhang & Sennrich, NeurIPS 2019](https://arxiv.org/abs/1910.07467);
 that paper is not evidence for our measured packing speedups.
 
 Three interventions were fixed before measuring. Each used six shapes,
@@ -20,20 +20,20 @@ measurements come from the actual RTX3090.
 
 | Candidate | Exploratory geometric ratio | Fresh-seed confirmation ratio | Confirmation wins / ties / losses |
 |---|---:|---:|---:|
-| Z1:4rows,4warps | 1.130623× | **1.139398×** | 23 /13 /0 |
-| Z2:8rows,4warps | **1.141692×** | 1.149730× | 24 /11 /1 |
-| Z3:16rows,8warps | 1.140406× | 1.147811× | 24 /11 /1 |
+| Z1: 4 rows, 4 warps | 1.130623× | **1.139398×** | 23 / 13 / 0 |
+| Z2: 8 rows, 4 warps | **1.141692×** | 1.149730× | 24 / 11 / 1 |
+| Z3: 16 rows, 8 warps | 1.140406× | 1.147811× | 24 / 11 / 1 |
 
-Z1 was selected **before** confirmation (seeds10/11/12), following the JEV
+Z1 was selected **before** confirmation (seeds 10/11/12), following the JEV
 review, and remains the exported default. Faster Z2/Z3 aggregate results and
 their regressions remain visible. All **288 numerical checks passed** across
-the two phases, with maximum absolute difference0.03125 against the official
+the two phases, with maximum absolute difference 0.03125 against the official
 Torch formula, within bf16 `rtol=.016,atol=1e-5`. These are tolerance checks,
 not a bitwise equality claim. Microsecond event timings are quantised; ties
 and this fixed shape panel limit interpretation. These ratios are not an
 official multi-chip score.
 
-[Full JSON and all2016 timing rows](results/task177-20261029) ·
+[Full JSON and all 2016 timing rows](results/task177-20261029) ·
 [Frozen exploratory protocol](evidence/task177-protocol-20261029.json)
 
 ```sh
@@ -104,24 +104,24 @@ python scripts/summarize_operators.py  # reconstruct all 39 cases on CPU
 **Registration completed, 29 October 2026:** the official portal confirmed
 “Registration Successful!” for **Agnuxo1Lab, Track 1**, with the author as captain.
 The consent and contact details remain in the private operational record.
-The first official code entry, `task177-z1.zip`, was submitted on29October
-at00:20UTC. It completed with **0/7 chips**, rejected before numerical
+The first official code entry, `task177-z1.zip`, was submitted on 29 October
+at 00:20 UTC. It completed with **0/7 chips**, rejected before numerical
 evaluation: the portal requires a top-level function named after the operator,
 `zimage_qk_rmsnorm`, rather than the task prose's `solution`. The submitted ZIP
 was downloaded independently and matches the local SHA256 exactly; the
-portal's18.4KB size display was not its actual byte count (1078bytes).
+portal's 18.4 KB size display was not its actual byte count (1078 bytes).
 [Recorded receipt](evidence/task177-official-receipt-20261029.json).
 
 The corrected archive exports the required function. Arithmetic and launch
-helpers are AST-identical to those used in the288 successful local checks.
+helpers are AST-identical to those used in the 288 successful local checks.
 A regression test rejects the actual first archive and accepts the corrected
 one. The first entry remains recorded as an interface failure, not a measured
 numerical or performance regression.
 
-**Corrected official entry,29October00:30UTC:** the portal confirms
+**Corrected official entry, 29 October 00:30 UTC:** the portal confirms
 `task177-z1-interfacefix.zip` submitted and queued. Its partial results show
-**5/7 chips passing correctness**, with measured speedups **MetaX2.17×,
-Hygon8.60×, GeneralA7.19× and GeneralB6.42×**. Kunlunxin passes correctness
+**5/7 chips passing correctness**, with measured speedups **MetaX 2.17×,
+Hygon 8.60×, General A 7.19× and General B 6.42×**. Kunlunxin passes correctness
 but reports **<0.01×**; Iluvatar and Ascend are still pending. All results are
 retained in the [partial official receipt](evidence/task177-official-interfacefix-20261029.json).
 The entry remains Evaluating: no final average, leaderboard qualification or
