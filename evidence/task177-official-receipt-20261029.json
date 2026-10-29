@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-29T00:22:12.331488+00:00",
+  "portal": "https://flagos.io/race-detail-season2?id=782kzq4m",
+  "team": "Agnuxo1Lab",
+  "task": 177,
+  "file": "task177-z1.zip",
+  "submitted_display_beijing": "10-29 08:20",
+  "state": "Evaluating",
+  "passed_chips_at_check": "0/7 pending",
+  "official_speedup": null,
+  "team_entries": 1,
+  "quota_remaining": "14/15",
+  "local_archive_sha256": "1f860356d6e80c3ae732b4326bf20629432c123e2498402237c9f1ee7cd64a7e",
+  "local_archive_bytes": 1078,
+  "portal_preflight": [
+    "valid archive",
+    "py extension",
+    "cross-chip filename correct",
+    "chip-specific names valid"
+  ],
+  "portal_displayed_size": "18.4KB (differs from local1078bytes; display not a content-hash verification)"
+}

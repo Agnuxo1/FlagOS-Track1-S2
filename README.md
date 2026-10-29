@@ -104,8 +104,11 @@ python scripts/summarize_operators.py  # reconstruct all 39 cases on CPU
 **Registration completed, 29 October 2026:** the official portal confirmed
 “Registration Successful!” for **Agnuxo1Lab, Track 1**, with the author as captain.
 The consent and contact details remain in the private operational record.
-The team dashboard shows registration; it does not establish a code submission
-or multi-chip score. The ZIPs under `submissions/` remain prepared candidates.
+The first official code entry, `task177-z1.zip`, was submitted on29October
+at00:20UTC. The task history shows **Evaluating**, one entry and14/15
+remaining daily attempts. No evaluated speedup or chip pass count is claimed
+while pending. [Recorded receipt](evidence/task177-official-receipt-20261029.json).
+The other ZIPs under `submissions/` remain prepared candidates.
 
 The current submission selector exposes **Batch 11, tasks161–177**. Our older
 softcap/RMSNorm candidates cannot be uploaded under a different task name.
