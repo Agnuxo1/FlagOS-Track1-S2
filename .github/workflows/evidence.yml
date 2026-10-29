@@ -10,5 +10,6 @@ jobs:
       - run: python scripts/summarize_gate.py
       - run: python scripts/summarize_operators.py
       - run: python scripts/verify_task177.py
+      - run: python -m unittest discover -s scripts -p test_task177_archive.py
       - run: git diff --exit-code -- results/operators-20261028/SUMMARY.md
       - run: git diff --exit-code -- results/gate-20261028/SUMMARY.md

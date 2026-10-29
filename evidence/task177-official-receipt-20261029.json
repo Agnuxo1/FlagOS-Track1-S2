@@ -5,8 +5,8 @@
   "task": 177,
   "file": "task177-z1.zip",
   "submitted_display_beijing": "10-29 08:20",
-  "state": "Evaluating",
-  "passed_chips_at_check": "0/7 pending",
+  "state": "Completed; interface rejection before execution",
+  "passed_chips_at_check": "0/7",
   "official_speedup": null,
   "team_entries": 1,
   "quota_remaining": "14/15",
@@ -18,5 +18,11 @@
     "cross-chip filename correct",
     "chip-specific names valid"
   ],
-  "portal_displayed_size": "18.4KB (differs from local1078bytes; display not a content-hash verification)"
+  "portal_displayed_size": "18.4KB (differs from local1078bytes; display not a content-hash verification)",
+  "actual_downloaded_archive_bytes": 1078,
+  "actual_downloaded_archive_sha256": "1f860356d6e80c3ae732b4326bf20629432c123e2498402237c9f1ee7cd64a7e",
+  "error": "Submitted code must define a function named zimage_qk_rmsnorm; only _qk_rows, packed_solution, solution found",
+  "corrected_archive": "task177-z1-interfacefix.zip",
+  "corrected_sha256": "c3ffd14c7113b5ed49f6f17a3006464ad2fabb1192f14cee523458c5cb98c210",
+  "core_helpers_ast_identical": true
 }

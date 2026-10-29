@@ -105,9 +105,18 @@ python scripts/summarize_operators.py  # reconstruct all 39 cases on CPU
 “Registration Successful!” for **Agnuxo1Lab, Track 1**, with the author as captain.
 The consent and contact details remain in the private operational record.
 The first official code entry, `task177-z1.zip`, was submitted on29October
-at00:20UTC. The task history shows **Evaluating**, one entry and14/15
-remaining daily attempts. No evaluated speedup or chip pass count is claimed
-while pending. [Recorded receipt](evidence/task177-official-receipt-20261029.json).
+at00:20UTC. It completed with **0/7 chips**, rejected before numerical
+evaluation: the portal requires a top-level function named after the operator,
+`zimage_qk_rmsnorm`, rather than the task prose's `solution`. The submitted ZIP
+was downloaded independently and matches the local SHA256 exactly; the
+portal's18.4KB size display was not its actual byte count (1078bytes).
+[Recorded receipt](evidence/task177-official-receipt-20261029.json).
+
+The corrected archive exports the required function. Arithmetic and launch
+helpers are AST-identical to those used in the288 successful local checks.
+A regression test rejects the actual first archive and accepts the corrected
+one. The first entry remains recorded as an interface failure, not a measured
+numerical or performance regression. No official speedup is claimed yet.
 The other ZIPs under `submissions/` remain prepared candidates.
 
 The current submission selector exposes **Batch 11, tasks161–177**. Our older

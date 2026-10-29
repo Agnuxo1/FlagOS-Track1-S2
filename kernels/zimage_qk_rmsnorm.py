@@ -43,9 +43,13 @@ def packed_solution(x, weight, eps, *, rows=8, warps=4):
     return y
 
 
-def solution(x, weight, eps):
+def zimage_qk_rmsnorm(x, weight, eps):
     return packed_solution(x, weight, eps, rows=4, warps=4)
 
 
-# The task prose names solution; its reference block names reference.
-reference = solution
+# Portal error establishes the required export; keep aliases for task prose.
+def solution(x, weight, eps):
+    return zimage_qk_rmsnorm(x, weight, eps)
+
+
+reference = zimage_qk_rmsnorm
