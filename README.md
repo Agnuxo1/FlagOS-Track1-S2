@@ -132,14 +132,32 @@ loop covers every row instead of dropping work. The generic file remains
 byte-identical, preserving the five successful chip implementations. All
 **36 new CUDA proxy checks** pass, including524288rows, the old grid boundary,
 two layouts and three seeds. [Complete coverage results](results/task177-20261029/ascend-launch-coverage.json).
-These checks establish numerical coverage on RTX3090; actual Ascend validation
-and performance still require a fresh official evaluation. Kunlunxin's low
-throughput is a separate, retained issue.
+These checks establish numerical coverage on RTX3090. The subsequent official
+evaluation below independently confirms Ascend correctness and performance.
+Kunlunxin's low throughput is a separate, retained issue.
 
 The Ascend-only repair, `task177-z1-ascendfix.zip`, was officially submitted
-on **29 October, 00:54 UTC**. The portal confirms **Submitted. Queued for
-evaluation.** [Third-entry receipt](evidence/task177-official-ascendfix-20261029.json).
-Its result remains pending; the earlier five measured speedups are preserved.
+on **29 October, 00:54 UTC**. Its official evaluation is now **Completed:
+7/7 chips pass correctness; portal average speedup 5.48×**.
+
+| Official evaluation chip | Speedup |
+|---|---:|
+| Iluvatar | 12.22× |
+| MetaX | 2.52× |
+| Hygon | 8.66× |
+| Kunlunxin | <0.01× |
+| Ascend | 1.30× |
+| General-Purpose Chip A | 7.20× |
+| General-Purpose Chip B | 6.46× |
+
+[Third-entry receipt](evidence/task177-official-ascendfix-20261029.json).
+The launch repair restores Ascend execution and the five earlier positive
+speedups remain positive. Other-chip timing differences are repeat-evaluation
+variation with byte-identical generic code, not gains attributed to the repair.
+The 5.48× value is reported by the portal; we do not infer its aggregation
+formula, leaderboard eligibility, rank or prize. Kunlunxin remains a substantial
+performance regression despite passing correctness. Enflame is displayed as
+unavailable, outside the seven evaluated chips.
 The other ZIPs under `submissions/` remain prepared candidates.
 
 The current submission selector exposes **Batch 11, tasks161–177**. Our older

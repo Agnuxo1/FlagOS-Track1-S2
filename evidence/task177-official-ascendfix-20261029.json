@@ -1,16 +1,40 @@
 {
-  "checked_utc": "2026-10-29T00:57:02.741115+00:00",
+  "checked_utc": "2026-10-29T01:03:20.335736+00:00",
   "portal": "https://flagos.io/race-detail-season2?id=782kzq4m",
   "team": "Agnuxo1Lab",
   "task": 177,
   "file": "task177-z1-ascendfix.zip",
   "submitted_receipt_display": "10-29 01:54:47 Europe/Madrid",
-  "state": "Submitted. Queued for evaluation.",
+  "state": "Completed",
   "archive_bytes": 2164,
   "archive_sha256": "5626828d6eaf25bef977b442828690f3cbd50f9e6bedf4a91ce7cb66864bc67f",
   "single_change": "Ascend-only bounded grid plus full row loop; genericfilebyte-identical",
   "local_checks": "36/36correctnesscoverage,3seeds,2layouts,rowsupto524288;3archivecontractregressionspass",
   "JEV": "jev1.14 submit_Ascend_only_launch_repair confidence.64",
   "comparator": "interfacefix entry Completed6/7; five positive chip speedups,Kunlunxin<.01;Ascend launcherror",
-  "official_results": "Pending; no success/score inferred from queued state"
+  "official_results": {
+    "correctness_passed": 7,
+    "correctness_evaluated": 7,
+    "portal_average_speedup": 5.48,
+    "speedup": {
+      "Iluvatar": 12.22,
+      "MetaX": 2.52,
+      "Hygon": 8.66,
+      "Kunlunxin": "<0.01",
+      "Ascend": 1.3,
+      "General-Purpose Chip A": 7.2,
+      "General-Purpose Chip B": 6.46
+    },
+    "Enflame": "unavailable, not one of seven evaluated chips",
+    "aggregation_formula": "not verified",
+    "rank_and_prize": "not established"
+  },
+  "initial_receipt_state": "Submitted. Queued for evaluation.",
+  "interpretation": "Ascend launch repair confirmed by official evaluation; generic code unchanged; other-chip timing changes are repeat variation, not attributed improvements. Kunlunxin severe performance regression retained.",
+  "official_archive_readback": {
+    "url": "https://flagos.ks3-cn-beijing.ksyuncs.com/files/274768039558307903/tKUjrCFt/task177-z1-ascendfix.zip",
+    "bytes": 2164,
+    "sha256": "5626828d6eaf25bef977b442828690f3cbd50f9e6bedf4a91ce7cb66864bc67f",
+    "matches_submitted_archive": true
+  }
 }
