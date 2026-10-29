@@ -2,6 +2,45 @@
 
 Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, Track1](https://www.kaggle.com/competitions/flag-os-open-computing-global-challenge-track-1), with reproducible correctness gates and raw latency evidence.
 
+## Live Batch 11 candidate: strided ZImage QK RMSNorm
+
+The newly registered team now targets **task177 `zimage_qk_rmsnorm`**. This
+adapts our packed-row RMSNorm to the official bf16/128-column interface,
+reads fused-QKV slices without a contiguous input copy, and preserves the
+required bf16 rounding before weight multiplication. Output is fresh and
+contiguous. All core arithmetic runs in Triton, with no Torch math fallback.
+RMSNorm's mathematical background is [Zhang & Sennrich, NeurIPS2019](https://arxiv.org/abs/1910.07467);
+that paper is not evidence for our measured packing speedups.
+
+Three interventions were fixed before measuring. Each used six shapes,
+two layouts, three fresh seeds and seven interleaved timing rounds. The
+control is **our same-formula one-row Triton kernel**, not SGLang's production
+baseline. Inputs are generated benchmark tensors; timing and correctness
+measurements come from the actual RTX3090.
+
+| Candidate | Exploratory geometric ratio | Fresh-seed confirmation ratio | Confirmation wins / ties / losses |
+|---|---:|---:|---:|
+| Z1:4rows,4warps | 1.130623× | **1.139398×** | 23 /13 /0 |
+| Z2:8rows,4warps | **1.141692×** | 1.149730× | 24 /11 /1 |
+| Z3:16rows,8warps | 1.140406× | 1.147811× | 24 /11 /1 |
+
+Z1 was selected **before** confirmation (seeds10/11/12), following the JEV
+review, and remains the exported default. Faster Z2/Z3 aggregate results and
+their regressions remain visible. All **288 numerical checks passed** across
+the two phases, with maximum absolute difference0.03125 against the official
+Torch formula, within bf16 `rtol=.016,atol=1e-5`. These are tolerance checks,
+not a bitwise equality claim. Microsecond event timings are quantised; ties
+and this fixed shape panel limit interpretation. These ratios are not an
+official multi-chip score.
+
+[Full JSON and all2016 timing rows](results/task177-20261029) ·
+[Frozen exploratory protocol](evidence/task177-protocol-20261029.json)
+
+```sh
+python scripts/verify_task177.py  # independently reconstruct every recorded ratio on CPU
+python bench/task177.py         # fresh GPU benchmark through the managed queue
+```
+
 ## Measured improvement: sigmoid-gate tiling
 
 Three fixed tiling interventions were executed on an RTX3090 against the SGLang reference geometry: one program per row, next-power-of-two block width and its width-dependent warp heuristic. All **72 correctness checks passed**. Each shape has three sessions,24 interleaved rounds/session and100 calls/sample. An independent CPU check reproduces every stored median and ratio from raw timings.
@@ -62,7 +101,18 @@ python scripts/summarize_operators.py  # reconstruct all 39 cases on CPU
 
 ## Official entry status and dates
 
-No official submission receipt, eight-chip score or completed FlagOS registration has been independently verified for this project. The ZIPs under `submissions/` are prepared candidates, not proof of acceptance. Verify the exact released task statement and evaluator before uploading a candidate.
+**Registration completed, 29 October 2026:** the official portal confirmed
+“Registration Successful!” for **Agnuxo1Lab, Track 1**, with the author as captain.
+The consent and contact details remain in the private operational record.
+The team dashboard shows registration; it does not establish a code submission
+or multi-chip score. The ZIPs under `submissions/` remain prepared candidates.
+
+The current submission selector exposes **Batch 11, tasks161–177**. Our older
+softcap/RMSNorm candidates cannot be uploaded under a different task name.
+The exact released task contract must match before an official code upload.
+Batch11 closes **29October19:59:59UTC+8 (12:59:59Madrid)**. The portal's
+countdown conflicts with the stated UTC+8 schedule; use the earlier explicit
+converted deadline until the organiser resolves it.
 
 The28October rules snapshot in the project evidence identifies batch12 development closing **5November19:59:59UTC+8**, batch13 closing **13November19:59:59UTC+8** (12:59:59Madrid), and registration ending13November23:59UTC+8. The later Kaggle container date must not be substituted for these platform batch deadlines. Official registration: [FlagOS portal](https://flagos.io/Register?raceId=8q4m2x7p&lang=en). Team/track exclusivity must be checked before entering both tracks.
 

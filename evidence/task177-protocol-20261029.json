@@ -1,0 +1,19 @@
+{
+  "task": 177,
+  "kernel": "zimage_qk_rmsnorm",
+  "official_url": "https://flagos.io/race-detail-season2?id=782kzq4m",
+  "frozen_utc": "2026-10-29T00:15:20.508634+00:00",
+  "hypotheses": {
+    "Z1": "Pack4rows,4warps",
+    "Z2": "Pack8rows,4warps",
+    "Z3": "Pack16rows,8warps"
+  },
+  "control": "own one-row Triton, same formula; not official SGLang implementation",
+  "inputs": "Generated bf16 tensors,6fixedshapes,contiguous and fusedQKVslices,3freshseeds; real hardware measurements",
+  "gates": [
+    "All144correctness checks pass versus official Torch formula",
+    "Fresh contiguous output, preserve input",
+    "Report every case, including regressions",
+    "No official score before actual portal evaluation"
+  ]
+}
