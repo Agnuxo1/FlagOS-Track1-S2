@@ -10,9 +10,20 @@
 
 </div>
 
+**Official evaluation of task 177: 7 of 7 chips pass correctness, with a portal average speedup of 5.48× and up to 12.22× on Iluvatar.**
+
 Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, Track1](https://www.kaggle.com/competitions/flag-os-open-computing-global-challenge-track-1), with reproducible correctness gates and raw latency evidence.
 
-**Contents** — [Background](#background) · [Live Batch 11 candidate: strided ZImage QK RMSNorm](#live-batch-11-candidate-strided-zimage-qk-rmsnorm) · [Measured improvement: sigmoid-gate tiling](#measured-improvement-sigmoid-gate-tiling) · [Three further kernel implementations](#three-further-kernel-implementations) · [Official entry status and dates](#official-entry-status-and-dates) · [Real-world applications](#real-world-applications) · [Possible improvements](#possible-improvements) · [Proposed next steps (not commitments)](#proposed-next-steps-not-commitments) · [Reproduction and provenance](#reproduction-and-provenance) · [Bibliography](#bibliography)
+## Results at a glance
+
+| Result | Value | Evidence |
+|---|---|---|
+| Task 177, official evaluation | **7 of 7 chips correct, portal average 5.48×** | [Receipt](evidence/task177-official-ascendfix-20261029.json) |
+| Speedup by chip | Iluvatar **12.22×**, Hygon **8.66×**, General A **7.20×**, General B **6.46×**, MetaX **2.52×**, Ascend **1.30×** | [Table below](#official-entry-status-and-dates) |
+| Sigmoid gate, GPU kernel time, RTX 3090 | **1.15×** geometric mean over six shapes, up to **1.33×**, on held-out seeds | [CUDA Graph results](results/cudagraph-20261102) |
+| Correctness | 288 local task 177 checks and 36 launch coverage checks pass | [Results](results/task177-20261029) |
+
+**Contents** — [Results at a glance](#results-at-a-glance) · [Background](#background) · [Live Batch 11 candidate: strided ZImage QK RMSNorm](#live-batch-11-candidate-strided-zimage-qk-rmsnorm) · [Measured improvement: sigmoid-gate tiling](#measured-improvement-sigmoid-gate-tiling) · [Three further kernel implementations](#three-further-kernel-implementations) · [Official entry status and dates](#official-entry-status-and-dates) · [Real-world applications](#real-world-applications) · [Possible improvements](#possible-improvements) · [Proposed next steps (not commitments)](#proposed-next-steps-not-commitments) · [Reproduction and provenance](#reproduction-and-provenance) · [Bibliography](#bibliography)
 
 ## Background
 
@@ -113,6 +124,25 @@ The positive shape-specific gains remain visible:
 | 32×8192 | **1.0140×** |
 
 The reference remains the default: the small aggregate effect and small-shape regression do not support replacing it generally. A shape-specific dispatcher selected from these results would need prospective confirmation. This does not discard the measured positive effects. These are **one-GPU benchmark results, not an official multi-chip score**.
+
+Those timings include Python dispatch: about 18 µs per call, against 1 to 2 µs of GPU time. The next section measures the kernels themselves.
+
+### GPU kernel time with CUDA Graphs, 2 November 2026
+
+Measured with CUDA events around CUDA Graph replay, which removes Python dispatch. Ten tile and warp settings per shape were chosen on training seeds 11 and 37, then validated on held-out seeds 142, 719 and 2026. Every candidate passed `torch.testing.assert_close` against the float reference on every seed.
+
+| Shape N×D | Setting chosen on training seeds | Held-out speedup, median | Lowest held-out seed | Range in five audits |
+|---|---|---:|---:|---:|
+| 1×128 | tile 256, 4 warps | 1.000× | 1.000× | 0.982–1.000× |
+| 1×4096 | tile 256, 4 warps | **1.178×** | 1.178× | 1.140–1.158× |
+| 4×4096 | tile 512, 8 warps | **1.147×** | 1.126× | 1.119–1.138× |
+| 8×4096 | tile 1024, 8 warps | **1.143×** | 1.130× | 1.117–1.136× |
+| 32×8192 | tile 1024, 4 warps | **1.121×** | 1.091× | 1.120–1.122× |
+| 16×16384 | tile 1024, 8 warps | **1.330×** | 1.330× | 1.320–1.338× |
+
+The geometric mean over the six shapes is **1.149×**. The five audits are separate runs on both server GPUs, with seeds 19, 71 and 2026 and 1,080 raw timings each; each fixed its own best of three tile settings, so their range is a cross-check, not the same setting. [Raw timings and reports](results/cudagraph-20261102). `python scripts/summarize_cudagraph.py` recomputes the held-out table from the raw timings on CPU.
+
+The shape-selected settings passed this held-out test on one RTX 3090. Official chips and shapes may differ, and replay time is not end-to-end latency.
 
 [All variants and shapes](results/gate-20261028/SUMMARY.md) · [Raw timings](results/gate-20261028/flagos_gate_raw.csv) · [Correctness/results](results/gate-20261028/flagos_gate_results.json)
 
@@ -261,9 +291,9 @@ The measured designs suggest the following uses; each would first need its own p
   variant, are possible first steps.
 - **Control and baseline.** The task 177 control is our own one-row Triton kernel, not SGLang's production kernel
   [[11](#ref-11)]; a comparison on identical inputs and layouts would show the gain over the baseline that matters.
-- **Shape-specific behaviour.** Softcap loses at 256 rows (0.9674× to 0.9825×), the sigmoid-gate tiling F1 loses at
-  1×128 (0.9893×) and the packed RMSNorm kernels win mostly on narrow rows. A shape-selecting dispatcher needs
-  prospective confirmation before it replaces any default.
+- **Shape-specific behaviour.** Softcap loses at 256 rows (0.9674× to 0.9825×) and the packed RMSNorm kernels win
+  mostly on narrow rows. The sigmoid-gate dispatcher passed a held-out test on one RTX 3090; the next test is on
+  the official chips before it replaces any default.
 - **Resolution of the timing.** Microsecond event timings are quantised and the shape panels are fixed; wider
   panels with more rounds would resolve small differences and ties [[14](#ref-14)].
 
@@ -275,7 +305,7 @@ Possible next steps, proposed here and not committed by the authors; none is sta
 
 1. Investigate the Kunlunxin result (<0.01×) on the packed kernel.
 2. Compare the task 177 candidate with SGLang's production kernel on identical inputs.
-3. Build and confirm prospectively a shape-selecting dispatcher for the tiling and operator candidates.
+3. Test the held-out sigmoid-gate dispatcher on the official chips, then extend it to the operator candidates.
 4. Repeat the fixed shape panels with wider coverage and more rounds.
 5. Prepare candidates only for tasks whose released contract matches exactly (the selector currently exposes Batch 11,
    tasks 161–177), and check team and track exclusivity before also entering Track 2 ([repository](https://github.com/Agnuxo1/FlagOS-Track2-S2)).
@@ -318,3 +348,16 @@ Code: Apache-2.0. Author: Francisco Angulo de Lafuente.
 <sub>Built by <a href="https://github.com/Agnuxo1">Francisco Angulo de Lafuente</a> · every figure is an animated
 rendering of the published file named in its footer · <a href="#flagos-track1-s2--controlled-triton-kernels">back to top ↑</a></sub>
 </div>
+
+<!-- author-background:start -->
+## Author background
+
+**Francisco Angulo de Lafuente**, independent AI researcher · [ORCID](https://orcid.org/0009-0001-1634-7063) · [arXiv](https://arxiv.org/a/angulodelafuente_f_1.html) · [Google Scholar](https://scholar.google.com/citations?user=6nOpJ9IAAAAJ) · [ResearchGate](https://www.researchgate.net/profile/Francisco-Angulo-Lafuente-3) · [Figshare](https://figshare.com/authors/Francisco_Angulo_de_Lafuente/22601234) · [Wikipedia](https://es.wikipedia.org/wiki/Francisco_Angulo_de_Lafuente)
+
+Earlier research at ECOFA focused on biotechnology for clean energy and on second-generation biofuels obtained by microbiological processing of organic waste. Two Spanish patents document that work:
+
+- **ES 2273594 B1**, *Process for obtaining fuels from organic waste*. Filed 5 September 2005, grant published 16 February 2008. [OEPM](https://www.oepm.es/pdf/ES/0000/000/02/27/35/ES-2273594_B1.pdf) · [Google Patents](https://patents.google.com/patent/ES2273594B1/en)
+- **ES 2341194 B1**, *Method for obtaining paraffin by a biological process with microorganisms from organic matter, and its refining for use as fuel*. Filed 11 September 2007, grant published 26 April 2011. Also published as EP2196519 and WO2009034217. [OEPM](https://www.oepm.es/pdf/ES/0000/000/02/34/11/ES-2341194_B1.pdf) · [Google Patents](https://patents.google.com/patent/ES2341194B1/en)
+
+These are historical publication and grant records under the inventor name Francisco Angulo Lafuente, and both have since lapsed. They are cited as evidence of a research trajectory and make no statement about current enforceability.
+<!-- author-background:end -->

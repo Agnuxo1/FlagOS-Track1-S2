@@ -1,0 +1,174 @@
+{
+  "start_utc": "2026-11-02T21:56:03+00:00",
+  "device": "NVIDIA GeForce RTX 3090",
+  "visible_gpu": "1",
+  "train_seeds": [
+    11,
+    37
+  ],
+  "holdout_seeds": [
+    142,
+    719,
+    2026
+  ],
+  "grid": [
+    [
+      256,
+      4
+    ],
+    [
+      512,
+      4
+    ],
+    [
+      1024,
+      4
+    ],
+    [
+      2048,
+      4
+    ],
+    [
+      256,
+      8
+    ],
+    [
+      512,
+      8
+    ],
+    [
+      1024,
+      8
+    ],
+    [
+      2048,
+      8
+    ],
+    [
+      4096,
+      4
+    ],
+    [
+      4096,
+      8
+    ]
+  ],
+  "rounds": 12,
+  "graph_replays": 64,
+  "torch": "2.14.1+cu130",
+  "triton": "3.8.0",
+  "source_sha256": "991be249cc8942c7fdbe1a6b834efa89a05e0a8a0ed02824cc476840041975f0",
+  "selection": [
+    {
+      "shape": [
+        1,
+        128
+      ],
+      "selected": "tile256_w4",
+      "tuning_speedup_median": 1.0,
+      "holdout_speedup_median": 1.0,
+      "holdout_speedup_minimum": 1.0,
+      "holdout_seed_speedups": [
+        1.0069444465497561,
+        1.0,
+        1.0
+      ],
+      "selected_by": "training seeds only; strict held-out validation",
+      "candidate_count": 10
+    },
+    {
+      "shape": [
+        1,
+        4096
+      ],
+      "selected": "tile256_w4",
+      "tuning_speedup_median": 1.1735005078901355,
+      "holdout_speedup_median": 1.1780821453588761,
+      "holdout_speedup_minimum": 1.1780821453588761,
+      "holdout_seed_speedups": [
+        1.189189146670812,
+        1.1780821453588761,
+        1.1780821453588761
+      ],
+      "selected_by": "training seeds only; strict held-out validation",
+      "candidate_count": 10
+    },
+    {
+      "shape": [
+        4,
+        4096
+      ],
+      "selected": "tile512_w8",
+      "tuning_speedup_median": 1.1399999437325972,
+      "holdout_speedup_median": 1.146666612339519,
+      "holdout_speedup_minimum": 1.1258278088256113,
+      "holdout_seed_speedups": [
+        1.146666612339519,
+        1.146666612339519,
+        1.1258278088256113
+      ],
+      "selected_by": "training seeds only; strict held-out validation",
+      "candidate_count": 10
+    },
+    {
+      "shape": [
+        8,
+        4096
+      ],
+      "selected": "tile1024_w8",
+      "tuning_speedup_median": 1.1428571968531198,
+      "holdout_speedup_median": 1.1428571968531198,
+      "holdout_speedup_minimum": 1.1298701789573817,
+      "holdout_seed_speedups": [
+        1.1298701789573817,
+        1.1428571968531198,
+        1.1428571968531198
+      ],
+      "selected_by": "training seeds only; strict held-out validation",
+      "candidate_count": 10
+    },
+    {
+      "shape": [
+        32,
+        8192
+      ],
+      "selected": "tile1024_w4",
+      "tuning_speedup_median": 1.1112245307137112,
+      "holdout_speedup_median": 1.1212121657542566,
+      "holdout_speedup_minimum": 1.0909091243156925,
+      "holdout_seed_speedups": [
+        1.1224490250476333,
+        1.0909091243156925,
+        1.1212121657542566
+      ],
+      "selected_by": "training seeds only; strict held-out validation",
+      "candidate_count": 10
+    },
+    {
+      "shape": [
+        16,
+        16384
+      ],
+      "selected": "tile1024_w8",
+      "tuning_speedup_median": 1.3471864303031864,
+      "holdout_speedup_median": 1.3298968809243736,
+      "holdout_speedup_minimum": 1.3298968809243736,
+      "holdout_seed_speedups": [
+        1.3298968809243736,
+        1.3298968809243736,
+        1.3298968809243736
+      ],
+      "selected_by": "training seeds only; strict held-out validation",
+      "candidate_count": 10
+    }
+  ],
+  "limitations": [
+    "CUDA Graph replay performance differs from end-to-end Python latency",
+    "Official challenge hardware, shapes and scoring must be independently checked",
+    "Using fastest measured training candidate is subject to selection bias"
+  ],
+  "last_updated_utc": "2026-11-02T21:56:11+00:00",
+  "end_utc": "2026-11-02T21:56:11+00:00",
+  "elapsed_seconds": 8.3,
+  "status": "complete"
+}
