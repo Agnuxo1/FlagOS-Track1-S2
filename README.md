@@ -14,6 +14,22 @@ Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, 
 
 **Contents** — [Background](#background) · [Live Batch 11 candidate: strided ZImage QK RMSNorm](#live-batch-11-candidate-strided-zimage-qk-rmsnorm) · [Measured improvement: sigmoid-gate tiling](#measured-improvement-sigmoid-gate-tiling) · [Three further kernel implementations](#three-further-kernel-implementations) · [Official entry status and dates](#official-entry-status-and-dates) · [Real-world applications](#real-world-applications) · [Possible improvements](#possible-improvements) · [Proposed next steps (not commitments)](#proposed-next-steps-not-commitments) · [Reproduction and provenance](#reproduction-and-provenance) · [Bibliography](#bibliography)
 
+## Competition status — 9 November 2026
+
+The archived task 177 submission has been recovered and its 2,164-byte ZIP has been checked against the historical receipt and a fresh anonymous download of the same public archive. The recorded final evaluation passed correctness on seven chips and reported a 5.48× average. Kunlunxin was recorded below 0.01×, which does not meet the currently displayed minimum of 0.1× on every evaluated chip. Correctness, average speedup, leaderboard eligibility, honors and prizes are separate outcomes; no current rank or honor has been verified.
+
+The task 177 development/submission window in **Batch 11 closed on 29 October 2026 at 19:59:59 UTC+8**. It is retained here as a historical artifact. The proposed task 177 improvements and “current Batch 11” statements below describe the October research plan; they are not instructions to continue developing or resubmit that closed competition task. The Batch 11 PR phase runs 6–12 November, but only a team confirmed to hold the **Occupied** honor must submit its best matching code and PR link. Neither such an honor nor a completed CLA has been established here.
+
+The official portal now shows **Batch 13 with 17 active tasks**, with development/submission ending **13 November 2026 at 19:59:59 UTC+8 / 11:59:59 UTC / 12:59:59 Madrid**. Its exact released task contracts must be checked before selecting another operator; existing candidates must not be renamed to fit a different task. The later Kaggle writeup deadline, 30 December at 16:00 UTC, does not extend a batch's kernel-submission window.
+
+Current portal instructions show **15 submissions per team per day**, shared across tasks, or 30 after additional developer-resource-account binding, with more than two minutes between submissions. Kaggle's overview still shows 60. Use the stricter portal instructions and verify the actual remaining team quota before uploading. The portal's detailed Ranking Rules prioritize the sum of reciprocal per-chip ranks, then average speedup and submission time; its older Speedup Testing paragraph and Kaggle overview still call average speedup primary. This inconsistency remains open until the actual task leaderboard and current portal instructions can be checked.
+
+The suggestion below to also enter Track 2 is superseded for official participation: the published competition rules allow each team to submit to **one track only**, and recorded Track 1 submission already fixes that selection. A separate research repository does not authorize an additional competition entry. New experiments require an active exact contract, a prospective control/intervention, fresh validation cases and a bounded managed-server job. No new GPU benchmark or official submission is claimed by this dated recovery note.
+
+Sources: [FlagOS Track 1 portal](https://flagos.io/race-detail-season2?id=782kzq4m&lang=en), [Kaggle overview](https://www.kaggle.com/competitions/flag-os-open-computing-global-challenge-track-1), [Kaggle rules](https://www.kaggle.com/competitions/flag-os-open-computing-global-challenge-track-1/rules), and the [historical archive receipt](evidence/task177-official-ascendfix-20261029.json). Portal rules were observed on 9 November; authenticated task contracts, remaining quota, current rank and honors were unavailable in that session.
+
+---
+
 ## Background
 
 <p align="center"><img src="docs/readme/02-background.gif" alt="Animated timeline from online softmax and RMSNorm to this repository" width="100%"><br><sub>Fig. 1 — Milestones behind this work. Sources: bibliography below.</sub></p>
@@ -318,3 +334,16 @@ Code: Apache-2.0. Author: Francisco Angulo de Lafuente.
 <sub>Built by <a href="https://github.com/Agnuxo1">Francisco Angulo de Lafuente</a> · every figure is an animated
 rendering of the published file named in its footer · <a href="#flagos-track1-s2--controlled-triton-kernels">back to top ↑</a></sub>
 </div>
+
+<!-- author-background:start -->
+## Author background
+
+**Francisco Angulo de Lafuente**, independent AI researcher · [ORCID](https://orcid.org/0009-0001-1634-7063) · [arXiv](https://arxiv.org/a/angulodelafuente_f_1.html) · [Google Scholar](https://scholar.google.com/citations?user=6nOpJ9IAAAAJ) · [ResearchGate](https://www.researchgate.net/profile/Francisco-Angulo-Lafuente-3) · [Figshare](https://figshare.com/authors/Francisco_Angulo_de_Lafuente/22601234) · [Wikipedia](https://es.wikipedia.org/wiki/Francisco_Angulo_de_Lafuente)
+
+Earlier research at ECOFA focused on biotechnology for clean energy and on second-generation biofuels obtained by microbiological processing of organic waste. Two Spanish patents document that work:
+
+- **ES 2273594 B1**, *Process for obtaining fuels from organic waste*. Filed 5 September 2005, grant published 16 February 2008. [OEPM](https://www.oepm.es/pdf/ES/0000/000/02/27/35/ES-2273594_B1.pdf) · [Google Patents](https://patents.google.com/patent/ES2273594B1/en)
+- **ES 2341194 B1**, *Method for obtaining paraffin by a biological process with microorganisms from organic matter, and its refining for use as fuel*. Filed 11 September 2007, grant published 26 April 2011. Also published as EP2196519 and WO2009034217. [OEPM](https://www.oepm.es/pdf/ES/0000/000/02/34/11/ES-2341194_B1.pdf) · [Google Patents](https://patents.google.com/patent/ES2341194B1/en)
+
+These are historical publication and grant records under the inventor name Francisco Angulo Lafuente, and both have since lapsed. They are cited as evidence of a research trajectory and make no statement about current enforceability.
+<!-- author-background:end -->
