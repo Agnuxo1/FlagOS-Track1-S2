@@ -1,0 +1,38 @@
+{
+  "github": {
+    "public": true,
+    "commit": "b45eef910e2f11801f85a20b252aeb8c76a7058f",
+    "anonymous_page_api_raw_git_ref": true,
+    "raw_files_verified": 31,
+    "actions": [
+      {
+        "id": 42795070453,
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/Agnuxo1/FlagOS-Track1-S2/actions/runs/42795070453"
+      }
+    ]
+  },
+  "kaggle": {
+    "public": true,
+    "id": "franciscoangulo/flagos-task196-portable-bias-plus-gelu",
+    "id_no": 144164846,
+    "version": 2,
+    "status": "COMPLETE",
+    "gpu": false,
+    "internet": false,
+    "source_cell_exact": true,
+    "output_sha256": "318f05c5525159ce8db77cd46b9d379a3406ef098997362e454a593ff3f4ecfe",
+    "anonymous_page": 200
+  },
+  "hugging_face": {
+    "public": true,
+    "commit": "590e4969e5db73bb9e38f21fe298912aab350f44",
+    "new_payloads_verified": 10,
+    "initial_payloads_unchanged": 7,
+    "all_payloads_verified": 17,
+    "git_archive_blobs_verified": 117,
+    "url": "https://huggingface.co/datasets/Agnuxo/flagos-task196-source-archive-20261110",
+    "followup_url": "https://huggingface.co/datasets/Agnuxo/flagos-task196-source-archive-20261110/tree/main/followup-20261110"
+  }
+}

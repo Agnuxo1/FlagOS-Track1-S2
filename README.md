@@ -22,6 +22,8 @@ The selected direct wrapper improved local call timing **1.15535x**, with shape-
 
 [Full evidence and limits](docs/task196-followups-20261110/README.md) · [Final exact export](kernels/task196-thin-flat-20261110/bias_gelu_tanh.py) · [Final submitted ZIP](submissions/task196-round3-20261110.zip) · [Native observations](results/task196-round3-20261110/NATIVE_RESULTS.json)
 
+[Competition-associated Kaggle notebook, version 2](https://www.kaggle.com/code/franciscoangulo/flagos-task196-portable-bias-plus-gelu) · [Hugging Face final source archive](https://huggingface.co/datasets/Agnuxo/flagos-task196-source-archive-20261110/tree/main/followup-20261110)
+
 ![Task196 host-call and graph confirmation](docs/task196-followups-20261110/wrapper-confirmation.png)
 
 The dated section below records the initial entry; its source, ZIP, text and figures remain preserved.

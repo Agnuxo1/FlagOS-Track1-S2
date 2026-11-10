@@ -41,6 +41,12 @@ Selected THIN_FLAT: confirmation call ratio **1.15535x**, shape-cluster 95% CI *
 
 Run each experiment from its own directory in a compatible Torch/Triton environment. Its output directory must not already exist. Use the normal managed GPU queue with the declared 15 minute outer/800 second internal bounds; do not repeat completed tickets as filler. A compatible official Triton/Triton-TLE stack is needed for each native chip. No further local tuning is proposed for this delivery.
 
+## Verified public copies
+
+[Competition-associated Kaggle notebook, version 2](https://www.kaggle.com/code/franciscoangulo/flagos-task196-portable-bias-plus-gelu) · [Hugging Face final source archive](https://huggingface.co/datasets/Agnuxo/flagos-task196-source-archive-20261110/tree/main/followup-20261110)
+
+The public Kaggle version completed on CPU; its output SHA256 matches the exact final kernel. The Hugging Face update adds ten payloads and preserves all seven initial payloads. All seventeen were downloaded anonymously and hash-checked; all 117 files of its Git archive match the pinned `b45eef910e2f11801f85a20b252aeb8c76a7058f` snapshot. [Public readback record](../../evidence/task196-followup-public-copies-20261110.json).
+
 ## Sources and rights
 
 Francisco Angulo de Lafuente · [ORCID](https://orcid.org/0009-0001-1634-7063). Code developed with Codex; earlier Claude/Codex work informed the experimental method. EGM reviews were independent and findings were checked by execution. Code and authored evidence are Apache-2.0; existing third-party notices and licenses remain intact. No new GELU algorithm is claimed.
