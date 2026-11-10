@@ -1,0 +1,16 @@
+{
+  "selected": "F1024",
+  "development_geomean_vs_B0": {
+    "F256": 1.0487970208045472,
+    "F512": 1.0595901529683998,
+    "F1024": 1.06566512202166
+  },
+  "rule": {
+    "metric": "within shape/dtype median of36 B0_us/arm_us ratios paired by(session,round), then geometric mean across development cases",
+    "minimum_speedup": 1.02,
+    "tie_break": "ordered F256,F512,F1024",
+    "otherwise": "B0_row",
+    "freeze_before_confirmation": true
+  },
+  "before_confirmation": true
+}

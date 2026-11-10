@@ -1,0 +1,232 @@
+{
+  "kind": "local3090_controlled_benchmark",
+  "selected": "F1024",
+  "selection": {
+    "selected": "F1024",
+    "development_geomean_vs_B0": {
+      "F256": 1.0487970208045472,
+      "F512": 1.0595901529683998,
+      "F1024": 1.06566512202166
+    },
+    "rule": {
+      "metric": "within shape/dtype median of36 B0_us/arm_us ratios paired by(session,round), then geometric mean across development cases",
+      "minimum_speedup": 1.02,
+      "tie_break": "ordered F256,F512,F1024",
+      "otherwise": "B0_row",
+      "freeze_before_confirmation": true
+    },
+    "before_confirmation": true
+  },
+  "selection_sha256": "3fb85829e04d27a427f6d9fd6695f943767633943dff65cf0841e296402dee3e",
+  "confirmation_all_cases": [
+    {
+      "case": 0,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0529248914570264,
+      "speedup_vs_P0": 1.7940399856374638,
+      "median_us": 23.11680018901825,
+      "paired_samples": 36
+    },
+    {
+      "case": 0,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0595438296544515,
+      "speedup_vs_P0": 1.7942167663875543,
+      "median_us": 22.988800704479218,
+      "paired_samples": 36
+    },
+    {
+      "case": 1,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0667357628842233,
+      "speedup_vs_P0": 1.8396667818104109,
+      "median_us": 22.55360037088394,
+      "paired_samples": 36
+    },
+    {
+      "case": 1,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0552377839316396,
+      "speedup_vs_P0": 1.8216558435658992,
+      "median_us": 22.630399465560913,
+      "paired_samples": 36
+    },
+    {
+      "case": 2,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0766602819090405,
+      "speedup_vs_P0": 1.8384670175666673,
+      "median_us": 22.860799729824066,
+      "paired_samples": 36
+    },
+    {
+      "case": 2,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0617240205993697,
+      "speedup_vs_P0": 1.8243806985135198,
+      "median_us": 22.758400440216064,
+      "paired_samples": 36
+    },
+    {
+      "case": 3,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0703879791204873,
+      "speedup_vs_P0": 1.8217212012427426,
+      "median_us": 22.860799729824066,
+      "paired_samples": 36
+    },
+    {
+      "case": 3,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0669760408045263,
+      "speedup_vs_P0": 1.809819803603625,
+      "median_us": 23.03999960422516,
+      "paired_samples": 36
+    },
+    {
+      "case": 4,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0699208668973974,
+      "speedup_vs_P0": 1.8205720641261767,
+      "median_us": 22.732800245285034,
+      "paired_samples": 36
+    },
+    {
+      "case": 4,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0751806053453699,
+      "speedup_vs_P0": 1.8227434495068588,
+      "median_us": 22.963200509548187,
+      "paired_samples": 36
+    },
+    {
+      "case": 5,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0732935957625955,
+      "speedup_vs_P0": 1.8102678442370812,
+      "median_us": 22.809600085020065,
+      "paired_samples": 36
+    },
+    {
+      "case": 5,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0671194590395126,
+      "speedup_vs_P0": 1.7946587509898442,
+      "median_us": 22.860799729824066,
+      "paired_samples": 36
+    },
+    {
+      "case": 6,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0788969204888552,
+      "speedup_vs_P0": 3.067684013229844,
+      "median_us": 22.809600085020065,
+      "paired_samples": 36
+    },
+    {
+      "case": 6,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.061606256379732,
+      "speedup_vs_P0": 3.1292600379209783,
+      "median_us": 23.372799903154373,
+      "paired_samples": 36
+    },
+    {
+      "case": 7,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0662332247550181,
+      "speedup_vs_P0": 3.0808389213524747,
+      "median_us": 23.16799983382225,
+      "paired_samples": 36
+    },
+    {
+      "case": 7,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0615384822039031,
+      "speedup_vs_P0": 3.0799954503633122,
+      "median_us": 23.11680018901825,
+      "paired_samples": 36
+    },
+    {
+      "case": 8,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0528623977377576,
+      "speedup_vs_P0": 1.7988853856816962,
+      "median_us": 22.988800704479218,
+      "paired_samples": 36
+    },
+    {
+      "case": 8,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.06574660292135,
+      "speedup_vs_P0": 1.813390725286766,
+      "median_us": 22.630399465560913,
+      "paired_samples": 36
+    },
+    {
+      "case": 9,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.0691675614872993,
+      "speedup_vs_P0": 1.842464929770565,
+      "median_us": 22.655999660491943,
+      "paired_samples": 36
+    },
+    {
+      "case": 9,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0698986303319398,
+      "speedup_vs_P0": 1.8164772533354123,
+      "median_us": 22.707200050354004,
+      "paired_samples": 36
+    },
+    {
+      "case": 10,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.077597024836701,
+      "speedup_vs_P0": 1.8044208296314452,
+      "median_us": 23.09119999408722,
+      "paired_samples": 36
+    },
+    {
+      "case": 10,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0752773545047112,
+      "speedup_vs_P0": 1.8256486494479813,
+      "median_us": 22.681599855422974,
+      "paired_samples": 36
+    },
+    {
+      "case": 11,
+      "dtype": "bfloat16",
+      "speedup_vs_B0": 1.072058584983434,
+      "speedup_vs_P0": 3.051290116285851,
+      "median_us": 23.06559979915619,
+      "paired_samples": 36
+    },
+    {
+      "case": 11,
+      "dtype": "float16",
+      "speedup_vs_B0": 1.0701709915146578,
+      "speedup_vs_P0": 3.026177234463465,
+      "median_us": 23.500800132751465,
+      "paired_samples": 36
+    }
+  ],
+  "confirmation_geomean_vs_B0": 1.0673401505051434,
+  "shape_cluster_bootstrap_95CI": [
+    1.0639939727583785,
+    1.0703652666874095
+  ],
+  "strict_lower_bound_gt1": true,
+  "all_correctness_passed": true,
+  "checks": 240,
+  "raw_rows": 7200,
+  "elapsed_seconds": 14.393617224006448,
+  "official_score": null,
+  "limits": [
+    "One NVIDIA3090, not seven official chips.",
+    "Authored cases, no official test suite available in inspected public tree.",
+    "Three sessions measure timing repeatability; shape-cluster bootstrap does not prove cross-device generalisation.",
+    "No confirmation reranking or adaptive thresholds."
+  ]
+}

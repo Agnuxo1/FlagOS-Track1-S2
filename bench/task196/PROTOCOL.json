@@ -1,0 +1,15 @@
+{
+ "task":196,"operator":"bias_gelu_tanh","version":"196-exp1",
+ "development_seed":20261110,"confirmation_seed":20261111,"order_seed":19620261110,"bootstrap_seed":19620261111,
+ "development_shapes":[[1,8],[1,128],[1,4096],[8,1024],[128,1024],[128,4096],[1024,4096],[512,8192]],
+ "confirmation_shapes":[[3,24],[7,40],[9,264],[17,1536],[31,4104],[129,4096],[257,8192],[64,32768],[4,5,128],[2,3,4096],[1,49152],[32,65536]],
+ "dtypes":["float16","bfloat16"],
+ "arms":["P0_reference","B0_row","F256","F512","F1024"],
+ "sessions":3,"rounds":12,"calls":20,"warmup":12,
+ "tolerances":{"float16":{"atol":0.01,"rtol":0.01},"bfloat16":{"atol":0.015,"rtol":0.015}},
+ "selection":{"metric":"within shape/dtype median of36 B0_us/arm_us ratios paired by(session,round), then geometric mean across development cases","minimum_speedup":1.02,"tie_break":"ordered F256,F512,F1024","otherwise":"B0_row","freeze_before_confirmation":true},
+ "confirmation":{"reranking":false,"bootstrap_replicates":10000,"unit":"shape cluster retaining both dtypes together, not timing repetition","report_all_slowdowns":true},
+ "adversarial_panels":["zeros","cancellation_rounding","large_finite","tails"],
+ "outer_timeout":"15m","internal_wall_seconds":800,
+ "local_result_is_official_score":false
+}

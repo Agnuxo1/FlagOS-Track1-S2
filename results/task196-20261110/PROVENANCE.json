@@ -1,0 +1,50 @@
+{
+  "task_id": 196,
+  "source_kind": "owned synthetic cases and source code, not external competition data",
+  "local_experiment_job": "54b4926c450e4ca8",
+  "managed_gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.14.1+cu130",
+  "triton": "3.8.0",
+  "source_sha256": {
+    "bias_gelu_tanh.py": "ef20e8e34d87056375a7a3eec950b9f8bf0bc54cdfe51f5f65f696ffb18c2d6d",
+    "PROTOCOL.json": "d3e5bd89d0d92377a902a3cf9d899481ac4a5ad531c72de0400779929ee827c6",
+    "run_experiment.py": "bf960c81de6ec411d05502f795fa9c08efb1e6e79b4ab8e572676257ee0dbc9a"
+  },
+  "selected": "F1024",
+  "selection_sha256": "3fb85829e04d27a427f6d9fd6695f943767633943dff65cf0841e296402dee3e",
+  "candidate_sha256": "47fc4eef7399602967d86e92d8bc8d4cae109a66360e58af94f4bfedcfee0d01",
+  "zip_sha256": "79fec0254a9a04b7d4fbb728c81d8329cea3343d4f576d5b42e0ebe716545233",
+  "local_correctness_checks": 240,
+  "timing_rows": 7200,
+  "production_export_smoke_cases": 6,
+  "official_reception": {
+    "status": "RECEIVED",
+    "submission_id": null,
+    "observed_utc": "2026-11-10T08:16:01.473712+00:00",
+    "url": "https://flagos.io/race-detail-season2?id=782kzq4m&lang=en"
+  },
+  "official_result": {
+    "status": "Completed",
+    "passed_chips": "7/7",
+    "average_speedup_display": "2.72x",
+    "chip_speedups": {
+      "Iluvatar": 4.46,
+      "MetaX": 2.23,
+      "Hygon": 3.73,
+      "Kunlunxin": 1.52,
+      "Ascend": 0.84,
+      "General-Purpose Chip A": 3.06,
+      "General-Purpose Chip B": 3.19
+    },
+    "Enflame": null,
+    "observed_utc": "2026-11-10T08:26:58.146721+00:00",
+    "rank": null,
+    "honor": null,
+    "prize": null,
+    "note": "Values read from the authenticated official history row. Enflame is a dash and not counted among the seven chips. This is an operator evaluation, not a prize or final contest result."
+  },
+  "jury_honor_or_prize": null,
+  "license": "Apache-2.0",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "0009-0001-1634-7063"
+}

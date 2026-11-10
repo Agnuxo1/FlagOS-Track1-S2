@@ -14,6 +14,14 @@ Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, 
 
 **Contents** — [Background](#background) · [Live Batch 11 candidate: strided ZImage QK RMSNorm](#live-batch-11-candidate-strided-zimage-qk-rmsnorm) · [Measured improvement: sigmoid-gate tiling](#measured-improvement-sigmoid-gate-tiling) · [Three further kernel implementations](#three-further-kernel-implementations) · [Official entry status and dates](#official-entry-status-and-dates) · [Real-world applications](#real-world-applications) · [Possible improvements](#possible-improvements) · [Proposed next steps (not commitments)](#proposed-next-steps-not-commitments) · [Reproduction and provenance](#reproduction-and-provenance) · [Bibliography](#bibliography)
 
+## Task196 — verified entry, 10 November 2026
+
+The active Batch13 now has a received official Task196 entry for `bias_gelu_tanh` (observed 2026-11-10T08:16:01.473712+00:00; no unique entry ID displayed). **Official evaluation completed: 7/7 chips passed, average speedup 2.72x**. The exact reviewed source preserves the required fp16/bf16 intermediate rounding and uses Triton throughout. Its local controlled experiment passed 240 correctness checks and retained 7200 timing rows; selected **F1024**, confirmation **1.06734x** versus the row/tile control. Local RTX 3090 measurements and official seven-chip results remain separate; no rank, honor or prize is claimed.
+
+[Task196 evidence and limits](docs/task196/README.md) · [Selected kernel](kernels/bias_gelu_tanh.py) · [Submitted ZIP](submissions/task196-20261110.zip) · [Raw timing rows](results/task196-20261110/raw.csv)
+
+![Task196 local confirmation, all cases](docs/task196/confirmation.png)
+
 ## Competition status — 9 November 2026
 
 The archived task 177 submission has been recovered and its 2,164-byte ZIP has been checked against the historical receipt and a fresh anonymous download of the same public archive. The recorded final evaluation passed correctness on seven chips and reported a 5.48× average. Kunlunxin was recorded below 0.01×, which does not meet the currently displayed minimum of 0.1× on every evaluated chip. Correctness, average speedup, leaderboard eligibility, honors and prizes are separate outcomes; no current rank or honor has been verified.
