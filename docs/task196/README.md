@@ -26,6 +26,12 @@ Selected **F1024**. Confirmation geometric mean **1.06734x versus the row/tile c
 
 The exact experimental files are in ../../bench/task196/ and the selected public export is ../../kernels/bias_gelu_tanh.py. Run the experiment in a compatible Torch/Triton GPU environment using the managed server queue, preserving PROTOCOL.json. It creates a new output directory and refuses to overwrite one. A compatible official Triton/Triton-TLE environment is required for the seven competition chips. The submitted ZIP is ../../submissions/task196-20261110.zip; its SHA256 is `79fec0254a9a04b7d4fbb728c81d8329cea3343d4f576d5b42e0ebe716545233`. Source, result, selection and export hashes are in ../../results/task196-20261110/PROVENANCE.json.
 
+## Public copies
+
+[Competition-associated Kaggle notebook](https://www.kaggle.com/code/franciscoangulo/flagos-task196-portable-bias-plus-gelu) · [Hugging Face source archive](https://huggingface.co/datasets/Agnuxo/flagos-task196-source-archive-20261110)
+
+The Kaggle notebook is public, associated with this competition, licensed Apache-2.0 and completed a CPU-only run. Its output kernel hash matches the submitted source. The Hugging Face archive is pinned to Git commit `1341e8d201bb83e8e730f3d3082904d3d5d98f77`; all seven published payloads were downloaded anonymously and verified, and all 87 files inside its Git archive match their pinned Git blobs.
+
 ## Sources and rights
 
 Author: Francisco Angulo de Lafuente, [ORCID](https://orcid.org/0009-0001-1634-7063). Code developed with Codex, with independent EGM review and executed corrections. The existing Claude/Codex controlled-experiment work informed the test method. Historical task177 remains closed and unchanged. This is kernel engineering, not a claim of a new GELU algorithm.

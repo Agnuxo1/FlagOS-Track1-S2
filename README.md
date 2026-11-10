@@ -20,6 +20,8 @@ The active Batch13 now has a received official Task196 entry for `bias_gelu_tanh
 
 [Task196 evidence and limits](docs/task196/README.md) · [Selected kernel](kernels/bias_gelu_tanh.py) · [Submitted ZIP](submissions/task196-20261110.zip) · [Raw timing rows](results/task196-20261110/raw.csv)
 
+[Competition-associated Kaggle notebook](https://www.kaggle.com/code/franciscoangulo/flagos-task196-portable-bias-plus-gelu) · [Hugging Face source archive](https://huggingface.co/datasets/Agnuxo/flagos-task196-source-archive-20261110)
+
 ![Task196 local confirmation, all cases](docs/task196/confirmation.png)
 
 ## Competition status — 9 November 2026
