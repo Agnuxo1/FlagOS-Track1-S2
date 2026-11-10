@@ -1,0 +1,89 @@
+{
+  "initial_entry": {
+    "status": "Completed",
+    "passed_chips": "7/7",
+    "average_speedup_display": "2.72x",
+    "chip_speedups": {
+      "Iluvatar": 4.46,
+      "MetaX": 2.23,
+      "Hygon": 3.73,
+      "Kunlunxin": 1.52,
+      "Ascend": 0.84,
+      "General-Purpose Chip A": 3.06,
+      "General-Purpose Chip B": 3.19
+    },
+    "Enflame": null,
+    "observed_utc": "2026-11-10T08:26:58.146721+00:00",
+    "rank": null,
+    "honor": null,
+    "prize": null,
+    "note": "Values read from the authenticated official history row. Enflame is a dash and not counted among the seven chips. This is an operator evaluation, not a prize or final contest result."
+  },
+  "followup_entry": {
+    "status": "Completed",
+    "passed_chips": "7/7",
+    "average_speedup_display": "2.72x",
+    "chip_speedups": {
+      "Iluvatar": 4.27,
+      "MetaX": 2.25,
+      "Hygon": 3.86,
+      "Kunlunxin": 1.52,
+      "Ascend": 0.93,
+      "General-Purpose Chip A": 3.09,
+      "General-Purpose Chip B": 3.15
+    },
+    "Enflame": null,
+    "observed_utc": "2026-11-10T09:43:49.960168+00:00",
+    "rank": null,
+    "honor": null,
+    "prize": null,
+    "note": "One native seven-chip evaluation. Average remains2.72x at displayed precision; per-chip changes from the initial entry are descriptive, not a controlled significance test. No further local retuning."
+  },
+  "followup_live_rank_snapshot": {
+    "rank": 11,
+    "teams": 21,
+    "rank_score_display": "0.44",
+    "average_speedup_display": "2.72x",
+    "passed_chips": "7/7",
+    "per_chip": {
+      "Iluvatar": {
+        "speedup": 4.27,
+        "rank": 37
+      },
+      "MetaX": {
+        "speedup": 2.25,
+        "rank": 87
+      },
+      "Hygon": {
+        "speedup": 3.86,
+        "rank": 4
+      },
+      "Kunlunxin": {
+        "speedup": 1.52,
+        "rank": 12
+      },
+      "Ascend": {
+        "speedup": 0.93,
+        "rank": 33
+      },
+      "General-Purpose Chip A": {
+        "speedup": 3.09,
+        "rank": 52
+      },
+      "General-Purpose Chip B": {
+        "speedup": 3.15,
+        "rank": 65
+      }
+    },
+    "observed_utc": "2026-11-10T09:47:34.381519+00:00",
+    "status": "provisional live table, not final awards"
+  },
+  "followup_source_sha256": "318f05c5525159ce8db77cd46b9d379a3406ef098997362e454a593ff3f4ecfe",
+  "followup_zip_sha256": "012e5cc40b0831c7deaf442e980ea3421a3592f2f93a29d71db4f08f06e8983a",
+  "followup_stored_archive_verified": true,
+  "followup_zip_bytes": 1621,
+  "unique_submission_id": null,
+  "additional_attempts": 1,
+  "remaining_quota_observed_after": 13,
+  "rank_and_chip_changes_not_controlled_significance_tests": true
+}

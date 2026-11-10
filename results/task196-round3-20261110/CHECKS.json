@@ -1,0 +1,3158 @@
+[
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 0,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "zeros",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 0,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "zeros",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 0,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "zeros",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 0,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "zeros",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 0,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "zeros",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 0,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "zeros",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 1,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "cancellation_rounding",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 1,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "cancellation_rounding",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 1,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "cancellation_rounding",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 1,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "cancellation_rounding",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 1,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "cancellation_rounding",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 1,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "cancellation_rounding",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 2,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "large_finite",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 2,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "large_finite",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 2,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "large_finite",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 2,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "large_finite",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 2.582964953035116e-10
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 2,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "large_finite",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 2.582964953035116e-10
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 2,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "large_finite",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 2.582964953035116e-10
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 3,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "tails",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 4.76837158203125e-07
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 3,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "tails",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 4.76837158203125e-07
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 3,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "float16",
+    "pattern": "tails",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 4.76837158203125e-07
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 3,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "tails",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 3,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "tails",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "adversarial",
+    "case": 3,
+    "shape": [
+      19,
+      280
+    ],
+    "dtype": "bfloat16",
+    "pattern": "tails",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 0,
+    "shape": [
+      1,
+      64
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 2.384185791015625e-07
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 2.384185791015625e-07
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 2.384185791015625e-07
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 5.960464477539063e-08
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 1,
+    "shape": [
+      3,
+      192
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 2.9802322387695312e-08
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 2.9802322387695312e-08
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 2.9802322387695312e-08
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 2,
+    "shape": [
+      8,
+      768
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 3,
+    "shape": [
+      32,
+      3080
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 4,
+    "shape": [
+      63,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 5,
+    "shape": [
+      255,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 6,
+    "shape": [
+      64,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "development",
+    "case": 7,
+    "shape": [
+      4,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 0,
+    "shape": [
+      1,
+      88
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 4.76837158203125e-07
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 4.76837158203125e-07
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 4.76837158203125e-07
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 1,
+    "shape": [
+      7,
+      200
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 2,
+    "shape": [
+      6,
+      1024
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 3,
+    "shape": [
+      21,
+      4096
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 4,
+    "shape": [
+      45,
+      8200
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 5,
+    "shape": [
+      99,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 6,
+    "shape": [
+      31,
+      32768
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 7,
+    "shape": [
+      17,
+      65536
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 3.0517578125e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 8,
+    "shape": [
+      2,
+      5,
+      2048
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "float16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 0.0001220703125
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "float16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "float16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "float16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "CURRENT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_FLAT",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "eager",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "pattern": "normal",
+    "arm": "THIN_PACKED",
+    "passed": true,
+    "max_abs": 1.52587890625e-05
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "arm": "CURRENT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_FLAT",
+    "passed": true
+  },
+  {
+    "stage": "graph",
+    "part": "confirmation",
+    "case": 9,
+    "shape": [
+      8,
+      262144
+    ],
+    "dtype": "bfloat16",
+    "arm": "THIN_PACKED",
+    "passed": true
+  }
+]

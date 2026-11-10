@@ -1,0 +1,134 @@
+{
+  "version": "196-wrapper-round3",
+  "baseline_source_sha256": "47fc4eef7399602967d86e92d8bc8d4cae109a66360e58af94f4bfedcfee0d01",
+  "development_seed": 196202611105,
+  "confirmation_seed": 196202611106,
+  "order_seed": 196202611107,
+  "bootstrap_seed": 196202611108,
+  "development_shapes": [
+    [
+      1,
+      64
+    ],
+    [
+      3,
+      192
+    ],
+    [
+      8,
+      768
+    ],
+    [
+      32,
+      3080
+    ],
+    [
+      63,
+      8192
+    ],
+    [
+      255,
+      4096
+    ],
+    [
+      64,
+      65536
+    ],
+    [
+      4,
+      262144
+    ]
+  ],
+  "confirmation_shapes": [
+    [
+      1,
+      88
+    ],
+    [
+      7,
+      200
+    ],
+    [
+      6,
+      1024
+    ],
+    [
+      21,
+      4096
+    ],
+    [
+      45,
+      8200
+    ],
+    [
+      99,
+      8192
+    ],
+    [
+      31,
+      32768
+    ],
+    [
+      17,
+      65536
+    ],
+    [
+      2,
+      5,
+      2048
+    ],
+    [
+      8,
+      262144
+    ]
+  ],
+  "dtypes": [
+    "float16",
+    "bfloat16"
+  ],
+  "arms": [
+    "CURRENT",
+    "THIN_FLAT",
+    "THIN_PACKED"
+  ],
+  "sessions": 3,
+  "rounds": 10,
+  "calls": 32,
+  "warmup": 12,
+  "tolerances": {
+    "float16": {
+      "atol": 0.01,
+      "rtol": 0.01
+    },
+    "bfloat16": {
+      "atol": 0.015,
+      "rtol": 0.015
+    }
+  },
+  "selection": {
+    "primary": "paired call_us geometric mean versus CURRENT",
+    "minimum_development_graph": 0.98,
+    "minimum_development_call": 1.02,
+    "otherwise": "CURRENT",
+    "tie_break": "protocol order",
+    "freeze_before_confirmation": true
+  },
+  "confirmation": {
+    "reranking": false,
+    "bootstrap_replicates": 10000,
+    "unit": "shape retaining both dtypes",
+    "offer_only_if_call_CI_lower_gt": 1.02,
+    "offer_only_if_graph_CI_lower_ge": 0.98,
+    "report_all_arms_and_slowdowns": true
+  },
+  "adversarial_panels": [
+    "zeros",
+    "cancellation_rounding",
+    "large_finite",
+    "tails"
+  ],
+  "outer_timeout": "15m",
+  "internal_wall_seconds": 800,
+  "official_score": null,
+  "module_prefix_sha256": "2d9b0938a7fd06a556b4d5ee973c8d84701d86623042b43f322393638095f888"
+}

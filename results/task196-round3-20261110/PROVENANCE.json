@@ -1,0 +1,99 @@
+{
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "0009-0001-1634-7063",
+  "license": "Apache-2.0",
+  "kind": "authored synthetic cases and source, no external test data",
+  "managed_job": "be76c11e02e2469b",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.14.1+cu130",
+  "triton": "3.8.0",
+  "source_sha256": {
+    "run_layout.py": "6ffe753c3d82169fe8df2117cc019f553d6e4fde3352971e039db1e1df46d655",
+    "bias_gelu_tanh.py": "922827d1d87e13a9787c70289eb617173919c7b02dee8b6a600d8bdc21af488e",
+    "PROTOCOL.json": "675fd20a54542dce2e4bc647045cfce72cb8cc212c77dfcc9d95cc83ad4935a1"
+  },
+  "raw_replay": {
+    "all_passed": true,
+    "job_id": "be76c11e02e2469b",
+    "selected": "THIN_FLAT",
+    "checks": 240,
+    "raw_rows": 3240,
+    "confirmation": {
+      "call_us": 1.1553541986479379,
+      "graph_us": 0.998204425118611
+    },
+    "CIs": {
+      "graph_us": [
+        0.9950930599630985,
+        1.0002829195555105
+      ],
+      "call_us": [
+        1.1535252858973088,
+        1.157279833101103
+      ]
+    },
+    "offer_one_official_followup": true,
+    "full_raw_replay": true,
+    "confirmation_reranking": false
+  },
+  "official_result": {
+    "status": "Completed",
+    "passed_chips": "7/7",
+    "average_speedup_display": "2.72x",
+    "chip_speedups": {
+      "Iluvatar": 4.27,
+      "MetaX": 2.25,
+      "Hygon": 3.86,
+      "Kunlunxin": 1.52,
+      "Ascend": 0.93,
+      "General-Purpose Chip A": 3.09,
+      "General-Purpose Chip B": 3.15
+    },
+    "Enflame": null,
+    "observed_utc": "2026-11-10T09:43:49.960168+00:00",
+    "rank": null,
+    "honor": null,
+    "prize": null,
+    "note": "One native seven-chip evaluation. Average remains2.72x at displayed precision; per-chip changes from the initial entry are descriptive, not a controlled significance test. No further local retuning."
+  },
+  "live_rank_snapshot": {
+    "rank": 11,
+    "teams": 21,
+    "rank_score_display": "0.44",
+    "average_speedup_display": "2.72x",
+    "passed_chips": "7/7",
+    "per_chip": {
+      "Iluvatar": {
+        "speedup": 4.27,
+        "rank": 37
+      },
+      "MetaX": {
+        "speedup": 2.25,
+        "rank": 87
+      },
+      "Hygon": {
+        "speedup": 3.86,
+        "rank": 4
+      },
+      "Kunlunxin": {
+        "speedup": 1.52,
+        "rank": 12
+      },
+      "Ascend": {
+        "speedup": 0.93,
+        "rank": 33
+      },
+      "General-Purpose Chip A": {
+        "speedup": 3.09,
+        "rank": 52
+      },
+      "General-Purpose Chip B": {
+        "speedup": 3.15,
+        "rank": 65
+      }
+    },
+    "observed_utc": "2026-11-10T09:47:34.381519+00:00",
+    "status": "provisional live table, not final awards"
+  },
+  "honor_or_prize": null
+}

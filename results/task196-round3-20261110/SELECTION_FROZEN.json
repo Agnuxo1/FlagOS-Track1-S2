@@ -1,0 +1,22 @@
+{
+  "selected": "THIN_FLAT",
+  "scores": {
+    "THIN_FLAT": {
+      "call_us": 1.1345621737158074,
+      "graph_us": 0.9992071553281487
+    },
+    "THIN_PACKED": {
+      "call_us": 1.0837926477055748,
+      "graph_us": 1.0219120036315528
+    }
+  },
+  "rule": {
+    "primary": "paired call_us geometric mean versus CURRENT",
+    "minimum_development_graph": 0.98,
+    "minimum_development_call": 1.02,
+    "otherwise": "CURRENT",
+    "tie_break": "protocol order",
+    "freeze_before_confirmation": true
+  },
+  "before_confirmation": true
+}

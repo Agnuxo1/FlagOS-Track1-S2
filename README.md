@@ -14,6 +14,18 @@ Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, 
 
 **Contents** — [Background](#background) · [Live Batch 11 candidate: strided ZImage QK RMSNorm](#live-batch-11-candidate-strided-zimage-qk-rmsnorm) · [Measured improvement: sigmoid-gate tiling](#measured-improvement-sigmoid-gate-tiling) · [Three further kernel implementations](#three-further-kernel-implementations) · [Official entry status and dates](#official-entry-status-and-dates) · [Real-world applications](#real-world-applications) · [Possible improvements](#possible-improvements) · [Proposed next steps (not commitments)](#proposed-next-steps-not-commitments) · [Reproduction and provenance](#reproduction-and-provenance) · [Bibliography](#bibliography)
 
+## Task196 follow-up — 10 November 2026
+
+The reviewed follow-up completed the official evaluation with **7/7 chips and displayed average 2.72x**. The live table showed **11/21, Rank score0.44**, observed 2026-11-10T09:47:34.381519+00:00; this is provisional. Some native chip values improved and others regressed. No honor or prize is claimed.
+
+The selected direct wrapper improved local call timing **1.15535x**, with shape-cluster95%CI[1.15353,1.15728]; graph replay was **0.99820x**, CI[0.99509,1.00028]. The flat GPU arithmetic is unchanged. The negative layout experiment is retained alongside the successful host-wrapper test; neither local metric is presented as a seven-chip speedup.
+
+[Full evidence and limits](docs/task196-followups-20261110/README.md) · [Final exact export](kernels/task196-thin-flat-20261110/bias_gelu_tanh.py) · [Final submitted ZIP](submissions/task196-round3-20261110.zip) · [Native observations](results/task196-round3-20261110/NATIVE_RESULTS.json)
+
+![Task196 host-call and graph confirmation](docs/task196-followups-20261110/wrapper-confirmation.png)
+
+The dated section below records the initial entry; its source, ZIP, text and figures remain preserved.
+
 ## Task196 — verified entry, 10 November 2026
 
 The active Batch13 now has a received official Task196 entry for `bias_gelu_tanh` (observed 2026-11-10T08:16:01.473712+00:00; no unique entry ID displayed). **Official evaluation completed: 7/7 chips passed, average speedup 2.72x**. The exact reviewed source preserves the required fp16/bf16 intermediate rounding and uses Triton throughout. Its local controlled experiment passed 240 correctness checks and retained 7200 timing rows; selected **F1024**, confirmation **1.06734x** versus the row/tile control. Local RTX 3090 measurements and official seven-chip results remain separate; no rank, honor or prize is claimed.

@@ -1,0 +1,34 @@
+{
+  "selected": "CURRENT",
+  "scores": {
+    "D1024": {
+      "call_us": 1.0023514691072586,
+      "graph_us": 1.0157519594542184
+    },
+    "D4096": {
+      "call_us": 0.9948710560869233,
+      "graph_us": 0.6461313769062947
+    },
+    "P4x256": {
+      "call_us": 0.9550186043179807,
+      "graph_us": 1.0204323315702613
+    },
+    "P4x1024": {
+      "call_us": 0.9473203485460204,
+      "graph_us": 0.7208394640903109
+    },
+    "P8x256": {
+      "call_us": 0.9577926002400016,
+      "graph_us": 1.0104107359496717
+    }
+  },
+  "rule": {
+    "primary": "paired graph_us geometric mean versus CURRENT",
+    "minimum_development_graph": 1.05,
+    "minimum_development_call": 0.98,
+    "otherwise": "CURRENT",
+    "tie_break": "protocol order",
+    "freeze_before_confirmation": true
+  },
+  "before_confirmation": true
+}

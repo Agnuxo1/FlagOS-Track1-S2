@@ -1,0 +1,12 @@
+{
+ "version":"196-layout-round2","baseline_source_sha256":"47fc4eef7399602967d86e92d8bc8d4cae109a66360e58af94f4bfedcfee0d01",
+ "development_seed":196202611101,"confirmation_seed":196202611102,"order_seed":196202611103,"bootstrap_seed":196202611104,
+ "development_shapes":[[1,32],[1,256],[4,520],[16,2048],[64,2056],[65,4096],[128,8192],[256,16384],[8,131072],[128,32768]],
+ "confirmation_shapes":[[2,56],[5,136],[3,1032],[11,3072],[23,6152],[137,2048],[127,8192],[33,49152],[3,7,1024],[16,131072]],
+ "dtypes":["float16","bfloat16"],"arms":["CURRENT","D1024","D4096","P4x256","P4x1024","P8x256"],
+ "sessions":3,"rounds":10,"calls":32,"warmup":12,
+ "tolerances":{"float16":{"atol":0.01,"rtol":0.01},"bfloat16":{"atol":0.015,"rtol":0.015}},
+ "selection":{"primary":"paired graph_us geometric mean versus CURRENT","minimum_development_graph":1.05,"minimum_development_call":0.98,"otherwise":"CURRENT","tie_break":"protocol order","freeze_before_confirmation":true},
+ "confirmation":{"reranking":false,"bootstrap_replicates":10000,"unit":"shape retaining both dtypes","offer_only_if_graph_CI_lower_gt":1.02,"offer_only_if_call_geomean_ge":0.99,"report_all_arms_and_slowdowns":true},
+ "adversarial_panels":["zeros","cancellation_rounding","large_finite","tails"],"outer_timeout":"15m","internal_wall_seconds":800,"official_score":null
+}

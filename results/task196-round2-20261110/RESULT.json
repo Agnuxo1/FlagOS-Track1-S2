@@ -1,0 +1,251 @@
+{
+  "selected": "CURRENT",
+  "selection_sha256": "f396640a0e5843b2ab2e6ba17d0833a6e920b1e6428954598892929e53924dc7",
+  "graph_geomean": 1.0,
+  "call_geomean": 1.0,
+  "graph_shape_cluster_95CI": [
+    1.0,
+    1.0
+  ],
+  "all_confirmation_arms": {
+    "CURRENT": {
+      "call_us": 1.0,
+      "graph_us": 1.0
+    },
+    "D1024": {
+      "call_us": 1.0008850348096097,
+      "graph_us": 1.0165532673206656
+    },
+    "D4096": {
+      "call_us": 1.0008517526421339,
+      "graph_us": 0.6121315803593345
+    },
+    "P4x256": {
+      "call_us": 0.9439027732962553,
+      "graph_us": 1.0786831119563278
+    },
+    "P4x1024": {
+      "call_us": 0.9430414385854823,
+      "graph_us": 0.7010007702070211
+    },
+    "P8x256": {
+      "call_us": 0.9432349201998997,
+      "graph_us": 1.054435397512106
+    }
+  },
+  "selected_graph_cases": [
+    {
+      "case": 0,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 0,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 1,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 1,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 2,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 2,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 3,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 3,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 4,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 4,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 5,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 5,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 6,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 6,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 7,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 7,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 8,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 8,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 9,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 9,
+      "dtype": "float16",
+      "ratio": 1.0
+    }
+  ],
+  "selected_call_cases": [
+    {
+      "case": 0,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 0,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 1,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 1,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 2,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 2,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 3,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 3,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 4,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 4,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 5,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 5,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 6,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 6,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 7,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 7,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 8,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 8,
+      "dtype": "float16",
+      "ratio": 1.0
+    },
+    {
+      "case": 9,
+      "dtype": "bfloat16",
+      "ratio": 1.0
+    },
+    {
+      "case": 9,
+      "dtype": "float16",
+      "ratio": 1.0
+    }
+  ],
+  "checks": 528,
+  "raw_rows": 7200,
+  "all_correctness_passed": true,
+  "offer_one_official_followup": false,
+  "elapsed_seconds": 33.93994857999496,
+  "official_result": null,
+  "limits": [
+    "One NVIDIA3090; no cross-chip claim.",
+    "Graph replay excludes most Python pacing and allocation; call timing retains pacing/allocation.",
+    "Fixed authored panel, no confirmation reranking; all negatives retained."
+  ]
+}

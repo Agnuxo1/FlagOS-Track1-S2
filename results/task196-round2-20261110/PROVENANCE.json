@@ -1,0 +1,53 @@
+{
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "0009-0001-1634-7063",
+  "license": "Apache-2.0",
+  "kind": "authored synthetic cases and source, no external test data",
+  "managed_job": "8c475e3e573c4676",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.14.1+cu130",
+  "triton": "3.8.0",
+  "source_sha256": {
+    "run_layout.py": "50235aa063acd6b4655ee6e229ace8ff78574a3a647d67960c713e51273b2bd1",
+    "bias_gelu_tanh.py": "2d9b0938a7fd06a556b4d5ee973c8d84701d86623042b43f322393638095f888",
+    "PROTOCOL.json": "f2a16d7837f8eca63e1144551572f05b2cb9188161c6cdb2683adfa50d62e3e6"
+  },
+  "raw_replay": {
+    "all_passed": true,
+    "checks": 528,
+    "raw_rows": 7200,
+    "selected": "CURRENT",
+    "official_followup_offered": false,
+    "reason": "No development arm met both preset graph improvement and host-call noninferiority. Confirmation was not used to change selection.",
+    "all_confirmation_arms": {
+      "CURRENT": {
+        "call_us": 1.0,
+        "graph_us": 1.0
+      },
+      "D1024": {
+        "call_us": 1.0008850348096097,
+        "graph_us": 1.0165532673206656
+      },
+      "D4096": {
+        "call_us": 1.0008517526421339,
+        "graph_us": 0.6121315803593345
+      },
+      "P4x256": {
+        "call_us": 0.9439027732962553,
+        "graph_us": 1.0786831119563278
+      },
+      "P4x1024": {
+        "call_us": 0.9430414385854823,
+        "graph_us": 0.7010007702070211
+      },
+      "P8x256": {
+        "call_us": 0.9432349201998997,
+        "graph_us": 1.054435397512106
+      }
+    },
+    "new_hypothesis_observation": "Packed4x256 had faster graph replay but slower calls; it remains exploratory evidence, not a confirmed replacement."
+  },
+  "official_result": null,
+  "live_rank_snapshot": null,
+  "honor_or_prize": null
+}
