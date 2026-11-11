@@ -14,6 +14,10 @@ Own Triton optimization candidates for [FlagOS Open Computing Global Challenge, 
 
 **Contents** — [Background](#background) · [Live Batch 11 candidate: strided ZImage QK RMSNorm](#live-batch-11-candidate-strided-zimage-qk-rmsnorm) · [Measured improvement: sigmoid-gate tiling](#measured-improvement-sigmoid-gate-tiling) · [Three further kernel implementations](#three-further-kernel-implementations) · [Official entry status and dates](#official-entry-status-and-dates) · [Real-world applications](#real-world-applications) · [Possible improvements](#possible-improvements) · [Proposed next steps (not commitments)](#proposed-next-steps-not-commitments) · [Reproduction and provenance](#reproduction-and-provenance) · [Bibliography](#bibliography)
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> Triton operator implementations target launch, layout and host-call overhead while preserving the required numerical behaviour. The repository reports a 2.72× portal-average speedup for its Task196 entry with correctness passed on seven evaluated chips. Its <a href="#task196-follow-up--10-november-2026">follow-up evidence</a> separates local wrapper timing from GPU replay and retains chip regressions, supporting hardware-specific performance decisions without treating an aggregate speedup as a universal resource saving.</sub>
+<!-- impact-note:end -->
+
 ## Task196 follow-up — 10 November 2026
 
 The reviewed follow-up completed the official evaluation with **7/7 chips and displayed average 2.72x**. The live table showed **11/21, Rank score0.44**, observed 2026-11-10T09:47:34.381519+00:00; this is provisional. Some native chip values improved and others regressed. No honor or prize is claimed.
